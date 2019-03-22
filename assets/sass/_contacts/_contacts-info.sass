@@ -1,0 +1,47 @@
+.contacts-info
+	&__content-container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-right: -15px
+		margin-left: -15px
+	&__contacts-container
+		width: calc(100% / 12 * 4 - 30px)
+		margin: 0 15px
+	&__map
+		width: calc(100% / 12 * 8 - 30px)
+		margin: 0 15px
+		border-radius: 10px
+		overflow: hidden
+		height: 380px
+	&_padding
+		padding-top: em(50)
+		padding-bottom: em(100)
+	&__item
+		a, address, p
+			font-family: $OpenSans-Light
+			color: #000
+			font-size: em(17)
+		display: flex
+		align-items: center
+		margin-bottom: em(30)
+	&__img-container
+		display: block
+		margin-right: 15px
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		border: 2px solid #ECECEC
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+	&__address
+		address
+			width: calc(100% / 12 * 9)
+			margin-bottom: 0
+			line-height: 1.3em
+		.contacts-info__img-container
+			// width: calc(100% / 12 * 3)
+
+

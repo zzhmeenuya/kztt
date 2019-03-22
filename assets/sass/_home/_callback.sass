@@ -1,0 +1,55 @@
+.section-callback
+	background-attachment: fixed
+	&__title
+		color: #fff
+		margin-bottom: em(40, 36)
+	&_padding
+		padding-top: 60px
+		padding-bottom: 80px
+
+.callback-form_flex
+	display: flex
+	flex-wrap: wrap
+	margin-left: -10px
+	margin-right: -10px
+
+.callback-form
+	&__input
+		height: 60px
+		border-radius: 3px
+		color: #2d2d2d
+		padding: 0 15px
+		font-family: $OpenSans-Light
+		font-size: em(18)
+		width: 100%
+		&.error
+			border: 2px solid $accent-2
+		&.success
+			border: 2px solid $accent
+	&__button
+		width: 100%
+		i 
+			margin-left: em(10)
+			animation: rotate 1s linear 0s infinite normal
+	&__input-group
+		margin: 0 10px
+		width: calc(100% / 12 * 4 - 21px)
+		position: relative
+	&__input-info
+		position: absolute
+		top: em(-21, 14)
+		font-size: em(14)
+		right: 0
+		color: #fff
+		span 
+			color: $accent-2
+	&__info	
+		color: #fff
+		width: 100%
+		text-align: center
+		p 
+			font-size: em(15)
+			margin-top: em(20)
+		span
+			color: $accent-2
+			

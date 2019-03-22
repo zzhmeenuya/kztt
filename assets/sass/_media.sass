@@ -1,0 +1,570 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px container( 960px )
++media-breakpoint-down(lg)
+	.main-contact
+		justify-content: flex-end
+		&__email
+			display: none
+	.main-menu 
+		ul 
+			li 
+				padding: 0 15px
+				a
+
+	.products-list
+		&__items-group
+			width: calc(100% / 12 * 7)
+			&:first-child
+				margin-right: 0
+				padding-right: 10px
+				width: calc(100% / 12 * 5)
+		&__item
+			white-space: pre-wrap
+	.main-footer
+		&__title
+			font-size: em(18)
+
+	.main-btn
+		&_padding-lr-70
+			padding: 0 50px
+		&_small-text
+			font-size: em(16)
+			height: 50px
+			line-height: 50px
+
+
+// ≥992px container( 750px )
++media-breakpoint-down(md)
+	.product-main-images
+		&__main-image
+			height: 176px
+
+	.product-useful-information-block
+		&__title
+			display: none
+		&__item-title
+			font-size: em(12)
+		&__link
+			font-size: em(12)
+			&:before	
+				height: 1px
+			
+	.product-block-info
+		padding-bottom: em(50)
+		padding-top: em(20)
+		&__main-images-container
+			width: calc(100% / 12 * 4 - 30px)
+		&__content-description-container
+			width: calc(100% / 12 * 8 - 30px)
+			display: flex
+			flex-flow: column wrap
+		&__main-title
+			font-size: em(16)
+			font-family: $OpenSans-Bold
+			order: 1
+		&__find-cost
+			font-size: em(12)
+		&__main-description-container
+			margin-bottom: em(20)
+			order: 2
+		&__useful-information
+			order: 3
+			margin-bottom: em(20)
+		&__order-container
+			order: 4
+			margin-bottom: 0
+		&__tabs
+			margin-bottom: em(25)
+		&__tab
+			font-size: em(14)
+			padding: 0 30px
+			&.active
+				font-size: em(14)
+				padding: 0 40px
+		&__empty-content
+			font-size: em(14)
+		
+
+	.main-btn
+		&_padding-lr-70
+			padding: 0 30px
+		&_small-text
+			font-size: em(14)
+			height: 40px
+			line-height: 40px
+
+	.main-menu 
+		ul 
+			li
+				padding: 0 10px
+				a
+					font-size: em(12)
+
+	.main-logo__title
+		font-size: em(12)
+
+	.contact-phone__phone
+		font-size: em(12)
+	.contact-phone__callback
+		font-size: em(11)
+
+	.main-logo
+		img
+			width: 30px
+
+	.header__title
+		font-size: em(30)
+		margin-top: em(60, 30)
+
+	.header__description
+		font-size: em(14)
+		margin-bottom: em(100, 14)
+
+	.section
+		&_title-fz-36
+			.section__title
+				font-size: em(24)
+
+	.section-warranty
+		&__description
+			font-size: em(14)
+			&:nth-child(2)
+				margin-bottom: em(30)
+			&:nth-child(3)
+				margin-bottom: em(20)
+
+	.section-callback
+		&_padding
+			padding-top: em(40)
+			padding-bottom: em(50)
+	.callback-form
+		&__input
+			font-size: em(14)
+			height: 40px
+	.main-btn.main-btn_height-60
+		font-size: em(16)
+		line-height: 40px
+		height: 40px
+
+	.our-product-card
+		&__image
+			height: 140px
+		&__title
+			font-size: em(12)
+	.section-our-products
+		&__title
+			margin-bottom: em(15, 24)
+
+	.section-our-products_padding
+		padding-top: em(50)
+
+	.section-partners
+		padding-top: em(30)
+		margin-top: 0
+		margin-bottom: 0
+		padding-bottom: em(30)
+		&__description
+			font-size: em(16)
+			margin-bottom: em(25)
+		.swiper-slide 
+			img
+				max-width: 220px
+
+	.main-footer
+		&__products-block-container
+			display: none
+		&__contacts-block-container 
+			margin-left: 30%
+		&__title-block-container
+			width: calc(100% / 24 * 7)
+
+	.promo-description
+		&__description
+			font-size: em(14)
+		&_padding-bottom
+			margin-bottom: em(50)
+
+	.catalog-products
+		&_padding
+			padding-top: em(30)
+			padding-bottom: em(50)
+		&__container
+			margin-left: -7.5px
+			margin-right: -7.5px
+	.catalog-products-card
+		margin: 15px 7.5px
+		width: calc(100% / 12 * 4 - 15px)
+		&__title
+			font-size: em(14)
+		&__link
+			height: 150px
+			margin-bottom: em(15)
+
+	.contacts-info
+		&__content-container
+			margin: 0
+		&__contacts-container
+			width: calc(100% / 12 * 4)
+			margin: 0
+		&__map
+			height: 230px
+			width: calc(100% / 12 * 7)
+			margin: 0
+		&__item
+			a, address, p
+				font-size: em(14)
+		&__img-container
+			margin-right: em(20)
+
+	.header_page-padding
+		padding-bottom: em(30)
+	.header_page-title-margin
+		margin-top: em(40, 30)
+		line-height: 1em
+		font-size: em(30)
+
+
+	
+// ≥768px container( 540px )
++media-breakpoint-down(sm)
+	.product-main-images
+		&__main-image
+			height: 250px
+			
+	.product-block-info
+		padding-top: em(20)
+		padding-bottom: em(40)
+		&__block-description
+			margin-left: 0
+			margin-right: 0
+		&__main-images-container
+			width: calc(100% / 12 * 12)
+			margin-left: 0
+			margin-right: 0
+			margin-bottom: em(30)
+		&__content-description-container
+			width: calc(100% / 12 * 12)
+			margin-left: 0
+			margin-right: 0
+			display: flex
+			flex-flow: column wrap
+		&__main-title
+			font-size: em(18)
+			order: 1
+		&__find-cost
+			font-size: em(12)
+		&__main-description-container
+			order: 2
+			display: none
+		&__useful-information
+			order: 3
+			margin-bottom: em(20)
+		&__order-container
+			order: 4
+			margin-bottom: 0
+		&__tabs
+			margin-bottom: em(25)
+		&__tab
+			padding: 0 15px
+			&.active
+				padding: 0 25px
+
+	.main-menu_d-flex 
+		ul
+			display: block
+	.main-menu 
+		ul 
+			li 
+				a
+					padding: 0
+					display: block
+	.main-menu_mobil
+		padding-top: 15px
+		height: 200%
+		background-color: #333
+		position: fixed
+		top: 0
+		left: 0
+		max-width: 240px
+		z-index: 9999
+		transition: all .30s ease
+		li
+			display: block
+			a
+				padding: 0
+				height: 35px
+				line-height: 35px
+		&.d-mobile-none
+			left: -240px
+
+	.main-contact
+		display: none
+
+	.slider-products__btn-container
+		display: none
+
+	.header__title
+		font-size: em(24)
+		margin-top: em(40, 30)
+
+	.header__description
+		margin-bottom: em(50, 14)
+
+	.section-warranty
+		&__description
+			&:nth-child(2)
+				margin-bottom: em(20)
+			&:nth-child(3)
+				margin-bottom: em(20)	
+			&:last-child
+				margin-bottom: em(20)
+		&__image
+			img
+				width: 100%
+				&:nth-child(1)
+					margin-bottom: 10px
+
+	.section-modern-production
+		&__images-container
+			overflow-x: scroll
+			flex-wrap: nowrap
+			margin: 0
+			display: -webkit-box
+		&__image-link
+			display: block
+			height: auto
+			width: auto
+			margin: 0
+			margin-right: 10px
+		&__image
+			display: block
+			width: 100%
+			height: auto
+
+	.callback-form
+		&_flex
+			margin: 0
+			justify-content: center
+		&__input-group
+			width: calc(100%/ 12 * 12)
+			margin: 0
+			margin-bottom: em(20)
+		&__input-group-button
+			margin-bottom: 0
+			margin-top: em(5)
+		&__input-info
+			font-size: em(12)
+			top: em(-18, 12)
+
+	.main-footer
+		&__contacts-block-container 
+			margin-left: 20%
+			transform: translate(0)
+			width: calc(100% / 24 * 10)
+		&__title-block-container
+   	 width: calc(100% / 24 * 9)
+
+	.promo-description
+		&__content-container
+			margin-left: 0
+			margin-right: 0
+		&__description-container, &__promo-block-container
+			width: calc(100%/ 12 * 12)
+			margin-left: 0
+			margin-right: 0
+		&__promo-block-container
+			margin-top: em(20)
+
+	.promo-block
+		&__image
+			width: 100%
+
+	.main-footer
+		position: relative
+		&__title
+			margin-bottom: em(20)
+			font-size: em(18)
+		&__content-container
+			flex-direction: column
+			align-items: center
+			text-align: center
+		&__title-block-container
+			width: 80%
+		&__contacts-block-container
+			width: 80%
+			margin-left: 0
+		&__sub-title.all-contacts__title
+			display: none
+	.social_mobil-position-absolute
+		position: absolute
+		bottom: 20px
+		left: 50%
+		transform: translateX(-50%)
+
+	.main-footer_padding
+		padding-top: em(20)
+		padding-bottom: em(60)
+
+	.catalog-products
+		&_padding
+			padding-top: em(30)
+			padding-bottom: em(50)
+		&__container
+			margin-left: -7.5px
+			margin-right: -7.5px
+	.catalog-products-card
+		margin: 15px 7.5px
+		width: calc(100% / 12 * 6 - 15px)
+		&__title
+			font-size: em(14)
+		&__link
+			height: 150px
+			margin-bottom: em(15)
+
+	.contacts-info
+		&__content-container
+			margin: 0
+		&__contacts-container
+			width: calc(100% / 12 * 12)
+			margin: 0
+		&__map
+			height: 230px
+			width: calc(100% / 12 * 12)
+			margin: 0
+		&__item
+			margin-bottom: em(30)
+			a, address, p
+				font-size: em(14)
+		&__img-container
+			margin-right: em(15)
+		&_padding
+			padding-top: em(25)
+			padding-bottom: em(50)
+
+	.header__menu_flex-end
+		justify-content: unset
+
+	.header_page-title-margin
+		line-height: 1em
+		margin-bottom: em(80, 24)
+
+	.breadcrumbs 
+		a, p
+			font-size: 14px
+		
+
+// ≥576px
++media-breakpoint-down(xs)
+	.mobil-block-product-description
+		order: 5
+		.mobil-title
+			font-size: em(18)
+			font-family: $OpenSans-Bold
+			margin-bottom: em(10, 18)
+			line-height: 1em
+		.mobil-sub-title
+			font-size: em(14)
+			font-family: $OpenSans-Bold
+		.mobil-description
+			font-size: em(15)
+			font-family: $OpenSans-Light
+			line-height: 1.4em
+		.mobil-sub-title-main
+			line-height: 1.3em
+			margin-top: em(20)
+			margin-bottom: em(20)
+
+	.product-block-info
+		&__block-description
+			margin-bottom: em(20)
+		&__main-images-container
+		&__content-description-container
+		&__main-title
+			order: 1
+		&__find-cost
+			display: none
+		&__main-description-container
+			order: 2
+		&__useful-information
+			order: 3
+			margin-bottom: em(20)
+		&__order-container
+			order: 4
+			margin-bottom: 0
+			margin-bottom: em(30)
+		&__tabs
+			margin-bottom: em(20)
+			border: none
+			flex-flow: column wrap
+			align-items: center
+		&__tab
+			padding: 0
+			border-radius: 5px
+			border: 1px solid $accent-3
+			text-align: center
+			max-width: 350px
+			width: 100%
+			margin-bottom: em(20)
+			font-size: em(16)
+			&:last-child
+				margin-bottom: 0
+			&.active
+				padding: 0
+				font-size: em(16)
+				border-radius: 5px
+				border-color: transparent
+
+	.product-useful-information-block
+		&__item
+			display: flex
+			flex-flow: column wrap
+			align-items: flex-start
+			background-color: #fff!important
+			padding: em(10) 0
+		&__link-container
+			line-height: 1em
+		&__item-title
+			font-size: em(16)
+		&__link
+			font-size: em(14)
+
+	.catalog-products
+		&_padding
+			padding-top: em(20)
+			padding-bottom: em(40)
+		&__container
+			margin-left: -10px
+			margin-right: -10px
+	.catalog-products-card
+		margin: 15px 10px
+		width: calc(100% / 12 * 6 - 20px)
+		&__title
+			font-size: em(14)
+		&__link
+			height: 100px
+			margin-bottom: em(10)
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	.mobil-block-product-description
+		display: none
+
+// ≤768px
++media-breakpoint-up(md)
+	.overlay
+		display: none
+
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

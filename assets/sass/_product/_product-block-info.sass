@@ -1,0 +1,121 @@
+.product-block-info
+	padding-top: em(30)
+	padding-bottom: em(70)
+	&__block-description
+		display: flex
+		flex-wrap: wrap
+		margin-left: -15px
+		margin-right: -15px
+		margin-bottom: em(40)
+	&__main-images-container
+		margin: 0 15px
+		width: calc(100% / 12 * 5 - 30px)
+	&__content-description-container
+		margin: 0 15px
+		width: calc(100% / 12 * 7 - 30px)
+	&__main-title
+		font-family: $OpenSans-SemiBold
+		font-size: em(18)
+		margin-bottom: em(17, 18)
+		line-height: 1em
+	&__main-description
+		font-size: em(14)
+		font-family: $OpenSans-Light
+		margin-bottom: em(17, 14)
+		line-height: 1.35em
+		&:last-child
+			margin-bottom: 0
+	&__main-description-container
+		margin-bottom: em(50)
+	&__order-container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__find-cost
+		color: $accent-light
+		font-family: $OpenSans-SemiBold
+		font-size: em(14)
+		position: relative
+		&:before
+			content: ''
+			background-color: $accent-light
+			width: 100%
+			height: 1px
+			position: absolute
+			bottom: 0
+			right: 0
+			transition: all .30s ease
+		&:hover
+			color: $accent-light
+			text-decoration: none
+			&:before
+				width: 0
+	&__order-container
+		margin-bottom: em(40)
+	&__tabs
+		display: flex
+		flex-wrap: wrap
+		border-bottom: 2px solid $accent-3
+		margin-bottom: em(40)
+	&__tab
+		font-size: em(18)
+		transition: padding .30s ease, background-color .30s ease
+		height: 45px
+		line-height: 45px
+		padding: 0 40px
+		cursor: pointer
+		border-radius: 5px 5px 0 0
+		&.active
+			font-family: $OpenSans-Bold
+			background-color: $accent-3
+			color: #fff
+			padding: 0 70px
+			pointer-events: none
+			border-radius: 5px 5px 0 0
+
+
+.product-useful-information-block
+	&__title
+		font-family: $OpenSans-SemiBold
+		font-size: em(18)
+		margin-bottom: em(17, 18)
+	&__item
+		padding: 6px 36px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&:nth-child(odd)
+			background-color: #EDEFF6
+	&__item-title
+		font-family: $OpenSans-Light
+	&__link
+		position: relative
+		color: $accent-light
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 100%
+			height: .6px
+			background-color: $accent-light
+			transition: all .30s ease
+		&:hover, &:focus
+			color: $accent-light
+			text-decoration: none
+			&:before
+				width: 0
+		&:first-child
+			margin-right: em(25)
+	
+
+.product-main-images
+	&__main-image
+		height: 410px
+		padding: 30px
+		box-shadow: 0 4px 13px rgba(0, 0, 0, 0.10)
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+

@@ -1,0 +1,77 @@
+.main-footer
+	&__content-container
+		display: flex
+		flex-wrap: wrap
+	&_background-black
+		background-color: #191919
+		color: #fff
+	&__title-block-container
+		width: calc(100% / 24 * 6)
+	&__products-block-container
+		width: calc(100% / 24 * 12)
+	&__contacts-block-container
+		width: calc(100% / 24 * 6)
+	&_padding
+		padding-top: em(20)
+		padding-bottom: em(30)
+	&__title
+		font-family: $OpenSans-ExtraBold
+		font-size: em(22)
+		text-transform: uppercase
+		line-height: 1.3em
+		margin-bottom: em(50, 22)
+		color: $accent
+
+.products-list
+	&__title
+		font-size: em(14)
+		margin-bottom: em(30, 14)
+	&__items
+		display: flex
+		flex-wrap: wrap
+	&__items-group
+		&:first-child
+			margin-right: em(30)
+	&__item
+		display: block
+		color: #fff
+		transition: all .30s ease
+		font-family: $OpenSans-Light
+		font-size: em(13.5)
+		white-space: nowrap
+		&:hover
+			color: #fff
+
+.social
+	&_color-white
+		.social__icon
+			color: #fff
+			border: 1px solid #fff
+	&__icon
+		border-radius: 50%
+		width: 30px
+		height: 30px
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		transition: all .30s ease
+		&:hover
+			text-decoration: none
+			border-color: transparent
+			transform: scale(.8)
+			i 
+				transform: scale(1.8)
+		i 
+			font-size: 14px
+			transition: all .30s ease
+
+.all-contacts
+	&__title
+		font-size: em(14)
+		font-family: $OpenSans-Bold
+		margin-bottom: em(30, 14)
+	&__item, &__address
+		font-size: em(13.5)
+		font-family: $OpenSans-Light
+	a
+		color: #fff

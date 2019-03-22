@@ -1,0 +1,190 @@
+.header
+	padding-bottom: 30px
+	&__menu 
+		padding-top: 15px
+		position: relative
+	
+.main-logo
+	&:hover
+		text-decoration: none
+	&__title
+		color: #ffffff
+		text-transform: uppercase
+		font-size: em(14)
+		font-family: $OpenSans-Bold
+		line-height: 1.1em
+		margin-left: em(10)
+	&_d-flex
+		display: flex
+		align-items: center
+
+.main-menu
+	&_d-flex
+		ul
+			display: flex
+			align-items: center
+			height: 100%
+			justify-content: flex-end
+	ul 
+		list-style: none
+		margin: 0
+		li 
+			padding: 0 30px
+			&.active
+				a
+					border-color: #fff
+			a 
+				color: #fff
+				font-size: em(16)
+				padding: 3px 0
+				transition: all .25s ease
+				border-bottom: 1px solid transparent
+				text-decoration: none
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					width: 0%
+					height: 1px
+					background-color: #fff
+					bottom: 0
+					right: 0
+					transition: all .30s ease
+				&:hover
+					&:before
+						width: 100%
+					// border-color: #fff
+				&.active
+					// border-color: #fff
+					&:before
+						width: 100%
+	&_padding-bottom
+		padding-bottom: 12px
+
+.main-contact
+	display: flex
+	justify-content: space-between
+
+.contact-email
+	display: flex
+	align-items: center
+	&__icon
+		color: #fff
+		display: inline-block
+		margin-right: 8px
+	&__email
+		color: #fff
+		&:hover
+			color: #fff
+	&_padding-bottom
+		padding-bottom: 12px
+
+.contact-phone
+	display: flex
+	flex-direction: column
+	justify-content: center
+	&__phone-cotainer
+		display: flex
+		align-items: center
+	&__icon
+		display: inline-block
+		margin-right: 8px
+	&__phone
+		color: #fff
+		&:hover
+			color: #fff
+	&__callback
+		color: $accent
+		align-self: flex-end			
+		line-height: 1.1em
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 100%
+			height: 1px
+			background-color: $accent
+			transition: all .30s ease
+		&:hover
+			text-decoration: none
+			color: $accent
+			&:before
+				width: 0
+
+.main-contact__phone
+	padding-top: em(19)
+
+.header
+	&__title
+		font-family: $OpenSans-Bold
+		font-size: em(36)
+		color: #fff
+		margin-top: em(40, 36)
+	&__description
+		max-width: 470px
+		margin-top: em(40)
+		color: #ffffff
+		line-height: em(30)
+		margin-bottom: em(130)
+
+.slider-products_d-flex
+	display: flex
+
+.slider-products
+	height: 100px
+	&__product-item
+		border: 1px solid #ffffff
+		align-self: auto
+		border-radius: 6px
+		padding: 8px 20px
+		width: 100%
+		transition: all .30s ease
+		margin-bottom: 15px	
+		overflow: hidden
+		&:hover
+			background-color: $accent
+			border-color: transparent
+			box-shadow: 3px 3px 27px 0px rgba($accent, .32)
+			.slider-products__more-info
+				height: auto
+				opacity: 1
+	&__title
+		color: #fff
+		font-family: $OpenSans-Light
+		line-height: 1em
+		white-space: nowrap
+	&__more-info
+		color: #fff
+		transition: all .30s ease
+		opacity: 0
+		height: 0
+		a 
+			color: #fff
+			font-family: $OpenSans-Light
+			font-size: em(13)
+	&__btn-container
+		display: flex
+		align-items: flex-end
+		justify-content: center
+		margin-left: 30px
+		margin-bottom: 11px
+	.swiper-slide
+		align-items: flex-end
+		display: flex
+		width: auto
+	.swiper-button
+		width: 40px
+		height: 40px
+		border-radius: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 1px solid #fff
+		cursor: pointer
+	.swiper-button-prev
+		margin-right: 5px
+	.swiper-wrapper
+
+
