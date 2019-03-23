@@ -338,4 +338,29 @@
 	});
 	// MAGNIFIC POPUP GALLERY HOME -END
 
+	
+	// PRELOADER (img load)
+	var preloader =  $('.preloader-container'),
+	imageCount = $('img').length,
+	persent = 100 / imageCount,
+	progress = 0,
+	loaded_img = 0;
+
+	console.log({'image_count': imageCount});
+	for( let i = 0; i < imageCount; i++ ){
+		var img_copy = new Image();
+		img_copy.src = document.images[i].src;
+		img_copy.onload = img_load;
+		img_copy.onerror = img_load;
+	}
+	function img_load(){
+	progress += persent;
+	loaded_img++;
+	if( progress >= 100 || loaded_img == imageCount ){
+		// $('html').removeClass('overflow-hidden');
+		// preloader.delay(400).fadeOut('slow');
+	}
+	}
+	// PRELOADER (img load) -END
+
 })(jQuery);
