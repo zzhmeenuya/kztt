@@ -357,8 +357,8 @@
 	progress += persent;
 	loaded_img++;
 	if( progress >= 100 || loaded_img == imageCount ){
-		// $('html').removeClass('overflow-hidden');
-		// preloader.delay(400).fadeOut('slow');
+		$('html').removeClass('overflow-hidden');
+		preloader.delay(400).fadeOut('slow');
 	}
 	}
 	// PRELOADER (img load) -END
