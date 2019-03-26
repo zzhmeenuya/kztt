@@ -83,7 +83,7 @@
 	var mySwiper = new Swiper ('#partners-slider', {
 		direction: 'horizontal',
 		slidesPerView: 'auto',
-		spaceBetween: 40,
+		spaceBetween: 30,
 		breakpoints: {
 			992: {
 				spaceBetween: 30
@@ -385,7 +385,7 @@ r(function(){
 	} else {
 		var videos = document.getElementsByClassName("youtube");
 	}
- 
+
 	var nb_videos = videos.length;
 	for (var i=0; i<nb_videos; i++) {
 		// Находим постер для видео, зная ID нашего видео
