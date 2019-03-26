@@ -57,6 +57,7 @@ gulp.task('scripts', function() {
 		'assets/libs/swiper/dist/js/swiper.min.js',
 		'assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'assets/libs/input-mask/dist/jquery.mask.min.js',
+		'assets/libs/equalHeights/equalHeights.min.js',
 		'assets/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -16,5 +16,19 @@
 		margin-bottom: em(100)
 
 .promo-block
+	position: relative
+	cursor: pointer
 	&__image
 		object-fit: contain
+	&__icon
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: #f00
+		font-size: 62px
+		height: 62px
+		max-width: 62px
+		min-width: 62px
+		overflow: hidden
+		white-space: nowrap

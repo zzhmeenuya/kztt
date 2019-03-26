@@ -5,7 +5,7 @@
 		margin-left: -10px
 		margin-right: -10px
 	&_padding
-		padding: 50px 0
+		padding: 30px 0 30px 0
 	
 .catalog-products-card
 	margin: 20px 10px
@@ -23,3 +23,52 @@
 	&__title
 		font-size: em(18)
 		line-height: 1em
+
+.catalog-products_v2
+	.catalog-products__container
+		display: flex
+		flex-wrap: wrap
+		margin-left: -10px
+		margin-right: -10px
+
+.catalog-products-list
+	margin: 0 10px 15px 10px
+	width: calc(100% / 12 * 4 - 20px)
+	&:last-child
+		margin-bottom: 0
+	&__top-container
+		text-align: center
+	&__subtitle
+		background-color: $accent
+		color: #fff
+		font-family: $OpenSans-Light
+		text-transform: uppercase
+		padding: 15px 15px
+		line-height: 1.4em
+	&__products
+		padding-top: 15px
+		padding-bottom: 25px
+		margin-bottom: 0
+		li 
+			list-style: none
+			a
+				color: #000
+				display: block
+				line-height: 1.5em
+				padding: 0 15px
+				&:hover
+					background-color: #eee
+					text-decoration: none
+	&__img
+		margin-bottom: em(40)
+		display: inline-block
+		width: 96px
+		height: 96px
+		max-width: 100%
+		object-fit: contain
+	&__title
+		font-size: em(22)
+		font-family: $OpenSans-Bold
+		margin-bottom: em(30, 22)
+		line-height: 1.3em
+	
