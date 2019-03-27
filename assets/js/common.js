@@ -362,7 +362,28 @@
 	}
 	}
 	// PRELOADER (img load) -END
-	
+
+
+	// CATALOG MENU ON HOME PAGE
+	$('.catalog-products_menu .catalog-products-list').on('click', function(){
+
+		const windowWidth = Math.max(
+			$(window).width(), $(window).innerWidth(),
+			$(window).outerWidth(), $(window).outerWidth(true)
+		);
+
+		if( windowWidth < 768 ){
+		
+			if( $(this).hasClass('on') ){
+				$(this).closest('.catalog-products_menu').find('.catalog-products-list').removeClass('on');
+			}
+			else{
+				$(this).closest('.catalog-products_menu').find('.catalog-products-list').removeClass('on');
+				$(this).addClass('on');
+			}
+		}
+	});
+	// CATALOG MENU ON HOME PAGE -END
 
 })(jQuery);
 

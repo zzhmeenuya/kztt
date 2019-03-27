@@ -71,4 +71,28 @@
 		font-family: $OpenSans-Bold
 		margin-bottom: em(30, 22)
 		line-height: 1.3em
+
+.catalog-products_menu
+	.catalog-products-list
+		color: #000
+		position: relative
+		.catalog-products-list__blocks
+			position: absolute
+			transition: all .30s ease
+			top: 100%
+			left: 0
+			opacity: 0
+			z-index: 999
+			background-color: #fff
+			width: 100%
+			box-shadow: 0 6px 13px rgba(#000, .5)
+			transform: scaleY(0)
+			transform-origin: top
+	.catalog-products-list__top-container
+		a
+			color: #000
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
 	
