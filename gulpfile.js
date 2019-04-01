@@ -58,7 +58,8 @@ gulp.task('scripts', function() {
 		'assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'assets/libs/input-mask/dist/jquery.mask.min.js',
 		'assets/libs/equalHeights/equalHeights.min.js',
-		'assets/js/common.js', // Always at the end
+		'assets/libs/fancybox/dist/jquery.fancybox.min.js',
+		'assets/js/common.js', // Always at the ends
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)

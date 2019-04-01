@@ -67,15 +67,17 @@
 		max-width: 100%
 		object-fit: contain
 	&__title
-		font-size: em(22)
+		font-size: em(18)
 		font-family: $OpenSans-Bold
 		margin-bottom: em(30, 22)
 		line-height: 1.3em
 
 .catalog-products_menu
+	padding-bottom: 0
 	.catalog-products-list
 		color: #000
 		position: relative
+		margin-bottom: 15px
 		.catalog-products-list__blocks
 			position: absolute
 			transition: all .30s ease
@@ -88,11 +90,140 @@
 			box-shadow: 0 6px 13px rgba(#000, .5)
 			transform: scaleY(0)
 			transform-origin: top
+		&__img
+			margin-bottom: em(10)
+			width: 90px
+		&__title
+			margin-bottom: em(10)
+			font-size: em(18)
+		&__subtitle
+			padding: 7px 10px
+			font-size: em(15)
+		&__products
+			padding: 10px 0
+		.catalog-products-list__products 
+			li 
+				a
+					font-size: em(15)
 	.catalog-products-list__top-container
 		a
 			color: #000
 			text-decoration: underline
+			display: block
 			&:hover
 				text-decoration: none
 
-	
+
+.catalog-products_menu-products
+	.catalog-products-list
+		opacity: .5
+		transition: all .30s ease
+		&:hover
+			opacity: 1
+		&.active
+			opacity: 1
+
+
+.section-products-on-catalog
+	&__subtitle, &__title
+		text-align: center
+		font-size: em(24)
+	&__subtitle
+		font-family: $OpenSans-Light
+	&__title
+		font-family: $OpenSans-Bold
+		margin-bottom: em(15, 24)
+	&_padding
+		padding-top: em(15)
+		padding-bottom: em(20)
+
+
+.products-on-catalog
+	display: flex
+	flex-wrap: wrap
+	margin-left: -15px
+	margin-right: -15px
+
+.product-on-catalog-card
+	margin-left: 15px
+	margin-right: 15px
+	margin-bottom: 15px
+	margin-top: 15px
+	width: calc(100% / 12 * 3 - 30px)
+	display: block
+	color: #000
+	&:hover
+		text-decoration: none
+		color: #000
+	&__image
+		height: 180px
+		box-shadow: 0 3px 7px 0px rgba(0, 0, 0, 0.1)
+		margin-bottom: em(30)
+		padding: 10px
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+	&__title
+		font-weight: normal
+		text-align: center
+		font-size: em(18)
+		margin-bottom: em(30, 18)
+	&__specifications
+		p
+			font-family: $OpenSans-Light
+
+
+.section-products-description
+	padding-bottom: em(50)
+	padding-top: em(30)
+	&__container
+		display: flex
+		flex-wrap: wrap
+		margin-left: -15px
+		margin-right: -15px
+	&__list
+		margin-left: 15px
+		margin-right: 15px
+		width: calc(100% / 12 * 5 - 30px)
+		p
+			margin-bottom: em(14)
+			font-family: $OpenSans-Light
+			font-size: em(16)
+			line-height: 1.2em
+	&__table
+		margin-left: 15px
+		margin-right: 15px
+		width: calc(100% / 12 * 7 - 30px)
+	&__title
+		margin-bottom: em(30, 24)
+		font-family: $OpenSans-Bold
+	&__list-group
+		margin-bottom: em(30)
+
+.product-desription-table
+	width: 100%
+	display: table
+	&__tr
+		display: table-row
+		&:nth-child(odd)
+			background-color: #E6E5E5
+		&:first-child
+			.product-desription-table
+				&__td
+					&:first-child
+						border-radius: 6px 0 0 0 
+						text-align: center
+					&:last-child
+						border-radius: 0 6px 0 0 
+	&__td
+		display: table-cell
+		padding: 10px
+		font-size: em(13)
+		text-align: center
+		vertical-align: middle
+		line-height: 1.39em
+		&:first-child
+			text-align: left
+			width: 40%
+			border-right: 1px solid #fff

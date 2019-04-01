@@ -327,6 +327,37 @@
 		.catalog-products-list
 			width: calc(100% / 12 * 6 - 30px)
 
+	.catalog-products_menu
+		padding-bottom: 0
+
+	.product-on-catalog-card
+		width: calc(100% / 12 * 4 - 30px)
+
+	.section-products-on-catalog
+	&__subtitle, &__title
+		font-size: em(20)
+	&__subtitle
+	&__title
+
+	.section-products-description
+		&__container
+			display: flex
+			flex-wrap: wrap
+			margin-left: 0
+			margin-right: 0
+		&__list
+			margin-left: 0
+			margin-right: 0
+			width: calc(100% / 12 * 12)
+			margin-bottom: em(15)
+		&__table
+			margin-left: 0
+			margin-right: 0
+			width: calc(100% / 12 * 12)
+		&__title
+			font-size: em(20)
+			margin-bottom: em(20, 20)
+
 // ≥992px container( 750px ) -END
 
 
@@ -624,10 +655,10 @@
 				a
 					color: #000
 					text-decoration: underline
-					transform: scale(0)
+					// transform: scale(0)
 					transition: all .30s ease
-					opacity: 0
-					display: none
+					// opacity: 0
+					// display: none
 			.catalog-products-list__img
 				transform: scale(1)
 				transition: all .30s ease
@@ -639,12 +670,64 @@
 					transform: scale(1)
 				.catalog-products-list__top-container
 					a
-						transform: scale(1)
-						opacity: 1
-						display: block
+						// transform: scale(1)
+						// opacity: 1
+						// display: block
 
+	.catalog-products_menu
+		padding-bottom: 0
+
+	.slider-products
+		&__title
+			font-size: em(14)
+			white-space: pre-wrap
+			text-align: center
+
+	.modal-sert
+		&__card
+			padding: 15px
+			width: calc(100% / 12 * 6)
+
+	.product-on-catalog-card
+		width: calc(100% / 12 * 6 - 30px)
+		&__title
+			font-size: em(16)
+			margin-bottom: em(15, 16)
+		&__image
+			margin-bottom: em(15)
+		&__specifications
+			p
+				font-size: em(15)
+
+	.section-products-on-catalog
+		&__subtitle, &__title
+			font-size: em(16)
+
+	.section-products-description
+		&__list
+			margin-bottom: em(15)
+			p
+				font-size: em(15)
+		&__title
+			font-size: em(16)
+			margin-bottom: em(20, 16)
+
+
+	.catalog-products_menu 
+		.catalog-products-list__title
+			font-size: em(16)
+
+	.product-desription-table
+		&__td
+			padding: 5px
+			width: 50%
+			&:first-child
+				width: 50%
 	
 // ≥768px container( 540px ) -END
+
+
+
 
 
 
@@ -761,6 +844,26 @@
 		&__link
 			height: 100px
 			margin-bottom: em(10)
+
+	.catalog-products_menu
+		padding-bottom: 0
+
+	.modal-sert
+		&__card
+			padding: 15px
+			width: calc(100% / 12 * 12)
+
+	.products-on-catalog
+		margin-left: 0
+		margin-right: 0
+	.product-on-catalog-card
+		margin-left: 0
+		margin-right: 0
+		width: calc(100% / 12 * 12)
+		&__image
+			margin-bottom: em(15)
+		&__title
+			margin-bottom: em(15, 18)
 
 
 
